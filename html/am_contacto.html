@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Inmobiliaria Costa del Sol</title>
+    <link rel="stylesheet" href="../css/am_styles.css">
+</head>
+<body>
+
+    <!-- Encabezado de la página -->
+    <header class="am_header">
+        <h1>Contacto</h1>
+        <!-- Navegación -->
+        <nav class="am_nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html/am_propiedades.html">Propiedades</a></li>
+                <li><a href="html/am_contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de contacto -->
+    <section class="am_contacto">
+        <h2>¡Ponte en contacto con nosotros!</h2>
+        <p>Para más información sobre nuestras propiedades, llena el siguiente formulario y te responderemos a la brevedad.</p>
+        
+        <form class="am_formulario_contacto" action="../php/am_procesardatos.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="am_footer">
+        <p>© 2024 Inmobiliaria Costa del Sol</p>
+    </footer>
+
+</body>
+</html>
